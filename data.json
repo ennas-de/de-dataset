@@ -1,0 +1,173 @@
+{
+    "products": [
+      {
+        "product_id": 101,
+        "product_name": "Laptop",
+        "category": "Electronics",
+        "price": 1500,
+        "stock_quantity": 50
+      },
+      {
+        "product_id": 102,
+        "product_name": "Smartphone",
+        "category": "Electronics",
+        "price": 800,
+        "stock_quantity": 200
+      },
+      {
+        "product_id": 103,
+        "product_name": "Headphones",
+        "category": "Accessories",
+        "price": 150,
+        "stock_quantity": 300
+      },
+      {
+        "product_id": 104,
+        "product_name": "Gaming Console",
+        "category": "Electronics",
+        "price": 500,
+        "stock_quantity": 30
+      }
+    ],
+    "customers": [
+      {
+        "customer_id": 201,
+        "name": "Alice Smith",
+        "email": "alice@example.com",
+        "phone": "+1234567890",
+        "registered_date": "2022-01-15",
+        "address": {
+          "street": "123 Main St",
+          "city": "New York",
+          "state": "NY",
+          "zipcode": "10001"
+        }
+      },
+      {
+        "customer_id": 202,
+        "name": "Bob Johnson",
+        "email": "bob@example.com",
+        "phone": "+1234567891",
+        "registered_date": "2021-06-22",
+        "address": {
+          "street": "456 Broadway Ave",
+          "city": "Los Angeles",
+          "state": "CA",
+          "zipcode": "90001"
+        }
+      },
+      {
+        "customer_id": 203,
+        "name": "Charlie Davis",
+        "email": "charlie@example.com",
+        "phone": "+1234567892",
+        "registered_date": "2020-11-05",
+        "address": {
+          "street": "789 Pine St",
+          "city": "Chicago",
+          "state": "IL",
+          "zipcode": "60601"
+        }
+      }
+    ],
+    "orders": [
+      {
+        "order_id": 301,
+        "customer_id": 201,
+        "order_date": "2023-07-10",
+        "total_amount": 2300,
+        "order_items": [
+          {
+            "product_id": 101,
+            "quantity": 1,
+            "price_per_unit": 1500
+          },
+          {
+            "product_id": 103,
+            "quantity": 2,
+            "price_per_unit": 150
+          }
+        ],
+        "delivery_status": "Delivered",
+        "delivery_date": "2023-07-14",
+        "payment_status": "Paid"
+      },
+      {
+        "order_id": 302,
+        "customer_id": 202,
+        "order_date": "2023-06-25",
+        "total_amount": 800,
+        "order_items": [
+          {
+            "product_id": 102,
+            "quantity": 1,
+            "price_per_unit": 800
+          }
+        ],
+        "delivery_status": "Delivered",
+        "delivery_date": "2023-06-30",
+        "payment_status": "Paid"
+      },
+      {
+        "order_id": 303,
+        "customer_id": 203,
+        "order_date": "2023-07-01",
+        "total_amount": 500,
+        "order_items": [
+          {
+            "product_id": 104,
+            "quantity": 1,
+            "price_per_unit": 500
+          }
+        ],
+        "delivery_status": "Shipped",
+        "payment_status": "Pending"
+      }
+    ],
+    "sales": [
+      {
+        "sale_id": 401,
+        "order_id": 301,
+        "sale_amount": 2300,
+        "sale_date": "2023-07-10",
+        "product_sales": [
+          {
+            "product_id": 101,
+            "quantity_sold": 1,
+            "sale_price": 1500
+          },
+          {
+            "product_id": 103,
+            "quantity_sold": 2,
+            "sale_price": 300
+          }
+        ]
+      },
+      {
+        "sale_id": 402,
+        "order_id": 302,
+        "sale_amount": 800,
+        "sale_date": "2023-06-25",
+        "product_sales": [
+          {
+            "product_id": 102,
+            "quantity_sold": 1,
+            "sale_price": 800
+          }
+        ]
+      },
+      {
+        "sale_id": 403,
+        "order_id": 303,
+        "sale_amount": 500,
+        "sale_date": "2023-07-01",
+        "product_sales": [
+          {
+            "product_id": 104,
+            "quantity_sold": 1,
+            "sale_price": 500
+          }
+        ]
+      }
+    ]
+  }
